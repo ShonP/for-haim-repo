@@ -2,14 +2,17 @@
     "name": "ACAP Native SDK Development",
     "build": {
         "dockerfile": "Dockerfile",
-        "context": "."
+        "context": ".."
     },
     "customizations": {
         "vscode": {
             "extensions": [
                 "ms-vscode.cpptools",
                 "ms-vscode.cmake-tools",
-                "twxs.cmake"
+                "twxs.cmake",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.makefile-tools",
+                "ms-azuretools.vscode-docker"
             ]
         }
     },
@@ -25,5 +28,7 @@
     ],
     "mounts": [
         "source=/dev,target=/dev,type=bind"
-    ]
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace"
 } 

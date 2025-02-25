@@ -1,0 +1,17 @@
+{
+    "schemaVersion": "1.7.0",
+    "acapPackageConf": {
+        "setup": {
+            "appName": "modbus_event_handler",
+			"friendlyName": "modbus_event_handler", 
+            "vendor": "HaimL",
+            "embeddedSdkVersion": "4.15",
+            "user": {
+                "username": "root",
+                "group": "sdk"
+            },
+            "runMode": "respawn",
+            "version": "1.0.2"
+        }
+    }
+}
